@@ -1,0 +1,129 @@
+/* Global Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, sans-serif;
+  background: #eef1f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: #ffffff;
+  width: 360px;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Form Styling */
+.input-container {
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs */
+.height-input,
+.weight-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Button */
+.calculate-btn {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background: #4a6cf7;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.calculate-btn:hover {
+  background: #3a58d6;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.result-box {
+  background: #f6f9ff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.05);
+}
+
+.bmi-value {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bmi-category {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+/* Color categories */
+.underweight {
+  color: #00a6d6;
+}
+.normal {
+  color: #28a745;
+}
+.overweight {
+  color: #ff9800;
+}
+.obese {
+  color: #f44336;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: 0.25s ease;
+  font-size: 15px;
+}
+
+.toggle-btn:hover {
+  background: #005fcc;
+}
+
+.reset-btn {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #b6f827;
+  border: none;
+  border-radius: 10px;
+  color: rgb(8, 8, 8);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
