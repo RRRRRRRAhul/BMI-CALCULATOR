@@ -1,0 +1,110 @@
+/* SAVE RECORDS PAGE */
+.save-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e9f0ff;
+  padding: 20px;
+}
+
+.save-box {
+  background: #ffffff;
+  width: 90%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.save-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.save-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1.5px solid #c9c9c9;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s;
+}
+
+.save-input:focus {
+  border-color: #4d61fc;
+}
+
+/* Save Button */
+.save-btn {
+  width: 100%;
+  background: #4975ff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: #3859d8;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  margin-top: 18px;
+  padding: 10px 20px;
+  background: #ff4a4a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #d83e3e;
+}
+
+/* PASSWORD LIST STYLES (Optional if you enable it later) */
+.list {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.list-item {
+  background: #f5f8ff;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  border: 1px solid #e0e6ff;
+}
+
+.delete-btn {
+  background: #ff4a4a;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #d63a3a;
+}

@@ -30,13 +30,13 @@ const BMIInput = () => {
         <input
           type="number"
           className="height-input"
-          placeholder="Enter height (cm)"
+          placeholder="Enter height (cm or inches)"
           ref={height}
         />
         <input
           type="number"
           className="weight-input"
-          placeholder="Enter weight (kg)"
+          placeholder="Enter weight (kg or lbs)"
           ref={weight}
         />
         <button

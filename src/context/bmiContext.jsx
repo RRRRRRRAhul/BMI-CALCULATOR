@@ -30,7 +30,7 @@ const BMIProvider = ({ children }) => {
     determineCategory(result);
     setShowResult(true);
 
-    return finalBmi; // ✅ return final formatted BMI
+    return finalBmi; //  return final formatted BMI
   };
 
   const determineCategory = (bmiValue) => {

@@ -1,33 +1,55 @@
-/* Global Layout */
-body {
+/* GENERAL APP DESIGN */
+* {
   margin: 0;
   padding: 0;
-  font-family: Poppins, Arial, sans-serif;
-  background: #eef1f8;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f0f4ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app-container {
   background: #ffffff;
-  width: 360px;
+  width: 100%;
+  max-width: 450px;
   padding: 25px;
-  border-radius: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
   text-align: center;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-  font-size: 24px;
   margin-bottom: 20px;
-  color: #222;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-/* Form Styling */
+/* TOGGLE BUTTON */
+.toggle-btn {
+  background: #4d61fc;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+.toggle-btn:hover {
+  background: #3849d4;
+}
+
+/* INPUT SECTION */
 .input-container {
-  width: 100%;
+  margin: 15px 0;
 }
 
 .input-form {
@@ -36,94 +58,103 @@ h1 {
   gap: 12px;
 }
 
-/* Inputs */
-.height-input,
-.weight-input {
+input {
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-size: 16px;
+  border: 1.5px solid #d6d6d6;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.25s;
 }
 
-/* Button */
+input:focus {
+  border-color: #4d61fc;
+}
+
 .calculate-btn {
-  margin-top: 10px;
-  padding: 12px;
-  width: 100%;
-  background: #4a6cf7;
+  background: #3cb371;
   border: none;
-  border-radius: 10px;
-  color: white;
-  font-size: 17px;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.3s;
 }
 
 .calculate-btn:hover {
-  background: #3a58d6;
+  background: #2e8b57;
 }
 
+/* RESULT SECTION */
 .result-container {
   margin-top: 20px;
 }
 
 .result-box {
-  background: #f6f9ff;
+  background: #fafafa;
   padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0px 3px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  border: 1px solid #ececec;
 }
 
 .bmi-value {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: bold;
-  margin: 0;
+  color: #222;
 }
 
 .bmi-category {
-  margin-top: 6px;
+  margin: 8px 0 18px;
   font-size: 18px;
+  font-weight: 600;
 }
 
-/* Color categories */
-.underweight {
-  color: #00a6d6;
+/* Color indicators for categories */
+.Underweight {
+  color: #0077ff;
 }
-.normal {
-  color: #28a745;
+.Normal {
+  color: #1faa00;
 }
-.overweight {
-  color: #ff9800;
+.Overweight {
+  color: #ff9f00;
 }
-.obese {
-  color: #f44336;
-}
-
-/* Toggle Button */
-.toggle-btn {
-  background: #007bff;
-  border: none;
-  color: white;
-  padding: 10px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-bottom: 18px;
-  transition: 0.25s ease;
-  font-size: 15px;
-}
-
-.toggle-btn:hover {
-  background: #005fcc;
+.Obese {
+  color: #ff3e3e;
 }
 
 .reset-btn {
-  margin-top: 12px;
-  padding: 10px 14px;
-  background: #b6f827;
+  background: #ff4a4a;
   border: none;
-  border-radius: 10px;
-  color: rgb(8, 8, 8);
-  font-size: 15px;
+  padding: 10px 18px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.3s;
+}
+.reset-btn:hover {
+  background: #d63a3a;
+}
+
+/* SAVE RECORD BUTTON */
+.save-btn {
+  margin-top: 20px;
+  background: #4d61fc;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.link-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.save-btn:hover {
+  background: #3746c7;
 }
