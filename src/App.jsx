@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import BMIInput from "./components/BmiInputs.Jsx";
+import BMIInput from "./components/BmiInputs.jsx";
 import BMIResult from "./components/BmiResult";
 import UnitToggle from "./components/BmiToggle";
 import { BMIContext } from "./context/bmiContext";
