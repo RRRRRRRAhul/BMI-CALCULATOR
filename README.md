@@ -1,16 +1,49 @@
-# React + Vite
+# 🔐 React Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure **Password Generator App** built with **React + Vite** and **Bootstrap**, using **Context API** for state management.  
+Users can generate strong random passwords and save them with a label (such as the social media or website name) for quick reference.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 **App Link:** [React Password Generator](https://react-password-generator-sooty.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔑 **Generate Strong Passwords:** Create secure and random passwords instantly.  
+- 🏷️ **Save Passwords with Labels:** Store each password with the name of the platform or website.  
+- 💾 **LocalStorage Support:** Saved passwords persist even after page reloads.  
+- 🧭 **Simple and Clean UI:** Built using **Bootstrap** for a responsive and user-friendly interface.  
+- ⚙️ **Context API for State Management:** Manages password generation and saved records globally without prop drilling.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Vite)
+- **State Management:** Context API
+- **Styling:** Bootstrap 5
+- **Build Tool:** Vite
+- **Storage:** LocalStorage
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/RRRRRRRAhul/BMI-CALCULATOR.git
+
+# 2. Navigate into the project folder
+cd BMI-CALCULATOR
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the app in development mode
+npm run dev
